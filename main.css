@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #6DF2CC, #66D9CD, #59B5D9,#3C74A6);
+    min-height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    width: 500px;
+    text-align: center;
+    height: 500px;
+
+    padding: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.185);
+    overflow: auto;
+    flex-grow: 1;
+    margin: 50px auto 0 auto;
+}
+
+h1{
+    margin-bottom: 16px;
+}
+
+form{
+    display: flex;/*transforma o formulário em um container flexivel*/
+    width: 100%;/*garante que formulário ocupe toda a largura do container pai */
+    margin-bottom: 10px;
+}
+
+input,
+button{
+    padding: 8px;
+    
+}
+
+button{
+    background-color: rgb(207, 112, 207);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: rgb(214, 32, 214);
+    cursor: pointer;
+}
+
+input{
+    border-color: #ebecee;
+    border-width: 1px;
+    flex-grow: 1;/*faz o input ocupar todo o espaço disponível*/
+    margin-right: 10px;
+    
+}
+
+.tarefa-item{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+    list-style: none;
+    margin-bottom: 5px;
+    background-color: #f0f3f3;
+    font-size: 16px;
+    position: relative;/* Adiciona posicionamento relativo */
+    
+}
+
+.tarefa-checkbox{
+    position: absolute;/* Posiciona o checkbox absolutamente */
+    right: 30px;/* Posiciona o checkbox na extremidade direita */
+    top: 50%;/* Centraliza verticalmente */
+    transform: translateY(-50%);/* Centraliza verticalmente */
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    background-color:  rgb(179, 178, 179);
+    width: 500px;
+    margin: 0 auto 50px auto ;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.185);
+}   
