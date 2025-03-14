@@ -25,7 +25,7 @@ body{
 }
 
 h1{
-    margin-bottom: 16px;
+    margin: 20px 0;
 }
 
 form{
@@ -46,6 +46,7 @@ button{
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    margin-right: 10px;
 }
 
 button:hover{
@@ -58,6 +59,7 @@ input{
     border-width: 1px;
     flex-grow: 1;/*faz o input ocupar todo o espaço disponível*/
     margin-right: 10px;
+    margin-left: 10px;
     
 }
 
@@ -68,18 +70,21 @@ input{
     justify-content: space-between;
     padding: 10px 0 10px 10px;
     list-style: none;
-    margin-bottom: 5px;
+    margin: 0 10px 5px 10px;
     background-color: #f0f3f3;
     font-size: 16px;
     position: relative;/* Adiciona posicionamento relativo */
+    margin-right: 10px;
+    
     
 }
 
 .tarefa-checkbox{
     position: absolute;/* Posiciona o checkbox absolutamente */
-    right: 30px;/* Posiciona o checkbox na extremidade direita */
+    right: 40px;/* Posiciona o checkbox na extremidade direita */
     top: 50%;/* Centraliza verticalmente */
     transform: translateY(-50%);/* Centraliza verticalmente */
+    margin-right: 10px;
 }
 
 footer{
